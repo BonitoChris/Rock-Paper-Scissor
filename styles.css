@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 15px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.move-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.hand-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hand-placeholder {
+  width: auto;
+  height: auto;
+}
+
+.hand-button {
+  width: 200px;
+  height: 200px;
+  font-size: x-large;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: transform 0.3s ease-out;
+}
+
+.hand-button:hover {
+  transform: scale(1.03);
+}
